@@ -1,1 +1,13 @@
-<h1>Welcom to aswe ewb app</h1>
+<% @calendar_events.each do |event| %>
+
+
+<div>
+     <h1><%= event.title %></h1><br />
+     <i><%= event.datetimedue %> <br />
+     <i> <%= event.description %></i> <br />
+     
+ </div>
+   
+  <hr />  
+
+<% end %>
