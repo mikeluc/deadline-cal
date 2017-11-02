@@ -4,4 +4,9 @@ class CalendarsController < ApplicationController
     @calendar_events = CalendarEvent.all
     
   end
+
+  
+ 
 end
+
+
