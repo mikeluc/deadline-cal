@@ -1,5 +1,12 @@
 
 <div class="box col-8 offset-2">
-
+  <h1>Enter the new event details </h1>
+  <%= simple_form_for calendars_path do |a| %>
+    <%= a.input :title %>
+    <%= a.input :description %>
+    <%= a.input :datetimedue %>
+    <br />
+    <%= a.submit 'create', class: 'btn btn-primary'%>
+  <% end %>
 
 </div>
