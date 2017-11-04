@@ -1,13 +1,1 @@
 
-<div class="box shadow col-8 offset-2"> 
-  <% @calendar_events.each do |event| %>
-
-    <div class="box col-10 offset-1">
-       <h1><%= event.title %></h1>
-       <i><%= event.datetimedue %> <br />
-       <i> <%= event.description %></i> <br />
-    </div>
-     
-   
-  <% end %>
-</div>
