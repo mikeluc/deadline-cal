@@ -13,12 +13,18 @@
       <button class="navbar-toggler navbar-toggler-left" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <a class="navbar-brand" href="#">Deadline Calendar</a>
+      
+      <%= link_to 'Deadline Calendar', root_path, class: 'navbar-brand' %>
 
       <div ">
         <ul class="navbar-nav mr-auto mt-2 mt-md-0">
           <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
+            
+            <%= link_to new_event_path, class: 'nav-link' do %>
+              New Event
+              <i class="fa fa-plus"></i>
+              
+            <% end %>
           </li>
           
         </ul>
